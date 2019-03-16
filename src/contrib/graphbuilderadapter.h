@@ -58,8 +58,8 @@ class GraphBuilderAdapter : public EventHandler {
   struct ContainerFrame {
     ContainerFrame(void* pSequence)
         : pContainer(pSequence), pPrevKeyNode(&sequenceMarker) {}
-    ContainerFrame(void* pMap, void* pPreviousKeyNode)
-        : pContainer(pMap), pPrevKeyNode(pPreviousKeyNode) {}
+    ContainerFrame(void* pMap, void* pPreviousKeyNode_)
+        : pContainer(pMap), pPrevKeyNode(pPreviousKeyNode_) {}
 
     void* pContainer;
     void* pPrevKeyNode;
